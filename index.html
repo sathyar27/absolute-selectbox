@@ -3,25 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Box Starter</title>
+	<title>Absolute Selectbox</title>
 	<link rel="icon" href="./favicon.png">
 	<link rel="stylesheet" href="style/box.css">
 	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<nav class="boxActions">
-		<a href="#" id="previous_box" title="Previous box">
-			<img src="img/back-icon.svg" alt="back" />
-		</a>
-		<a href="#" id="box_home" title="Box home">
-			<img src="img/krdsbox.svg" alt="KRDS Box" />
-		</a>
-		<a href="#" id="github_repo" title="Github repo">
-			<img src="img/github.svg" alt="Github" />
-		</a>
-	</nav>
-	<h1>Box Starter</h1>
-	<p>An optional &amp; minimal starter kit for krdsbox components</p>
+	<div class="container">	
+		<header>		
+			<h1>Absolute Selectbox</h1>
+			<p>A simple javascript custom selectbox</p>
+			<nav class="boxActions">
+				<a href="#" id="previous_box" title="Previous box">
+					<img src="img/back-icon.svg" alt="back" />
+				</a>
+				<a href="#" id="box_home" title="Box home">
+					<img src="img/krdsbox.svg" alt="KRDS Box" />
+				</a>
+				<a href="#" id="github_repo" title="Github repo">
+					<img src="img/github.svg" alt="Github" />
+				</a>
+			</nav>
+		</header>	
+
+		<input type="radio" id="tab1" checked name="tab" />
+		<input type="radio" id="tab2" name="tab" />
+		<input type="radio" id="tab3" name="tab" />
+		<div class="tabMenu">
+			<label for="tab1">Demo1</label>
+			<label for="tab2">Demo2</label>
+			<label for="tab3">Demo3</label>
+		</div>
+
+		<section id="demo1">			
+			<select name="abc" class="customSelectDemo1">
+				<option value="1">Choose</option>
+				<option value="2">Facebook</option>
+				<option value="3">Dribble</option>
+				<option value="4">Twitter</option>
+			</select>
+		</section>		
+		<section id="demo2">
+			<select name="abc" class="customSelectDemo2">
+				<option value="1">Choose an option</option>
+				<option value="2">Facebook</option>
+				<option value="3">Dribble</option>
+				<option value="4">Twitter</option>
+			</select>
+		</section>		
+		<section id="demo3">
+			<select name="abc" class="customSelectDemo3">
+				<option value="1">Choose here</option>
+				<option value="2">Facebook</option>
+				<option value="3">Dribble</option>
+				<option value="4">Twitter</option>
+			</select>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$('.customSelectDemo1').customSelect({myClass : "demo1"});
+		$('.customSelectDemo2').customSelect({myClass : "demo2"});
+		$('.customSelectDemo3').customSelect({myClass : "demo3"});
+	</script>
 </body>
 </html>
