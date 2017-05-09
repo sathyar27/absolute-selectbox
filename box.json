@@ -1,10 +1,10 @@
 {
-	"name": "Box starter",
-	"description": "An optional & minimal starter kit for krdsbox components",
-	"author": "Moorthy",
-	"author-email": "moorthy.g@krds.fr",
-	"image": "relative path of 500x500 image ( empty string if no image )",
-	"gif": "relative path of 500x500 animated gif ( empty string if no image )",
-	"tags": "comma, separated, tags",
-	"repo-url": "https://github.com/krdsbox/box-starter"
+	"name": "Absolute Selectbox",
+	"description": "Custom selectbox by css and jquery",
+	"author": "Sathya R",
+	"author-email": "sathya.r.g@krds.fr",
+	"image": "img/packshot.png",
+	"gif": "img/packshot.gif",
+	"tags": "absolute selectbox, custom selectbox, selectbox",
+	"repo-url": "https://github.com/krdsbox/absolute-selectbox"
 }
