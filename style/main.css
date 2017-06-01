@@ -1,31 +1,11 @@
 /* ABSOLUTE SELECT BOX */
 @font-face {
-	font-family:'open sans';
-	src:url(../fonts/openSans-regular.woff2) format('woff2'),
-		url(../fonts/openSans-regular.woff) format('woff');
-	font-style:normal;
-	font-weight:400;
-}
-
-@font-face {
-	font-family:'lobster';	
-    src: url(../fonts/lobster-regular-webfont.woff2) format('woff2'),
-		 url(../fonts/lobster-regular-webfont.woff) format('woff');
-	font-style:normal;
-	font-weight:normal;
-}
-
-@font-face {
 	font-family:icm;	
 	src:url(../font/icomoon.eot?#iefix) format('embedded-opentype'),
 		url(../fonts/icomoon.woff) format('woff'),
 		url(../fonts/icomoon.ttf) format('truetype');
 	font-style:normal;
 	font-weight:400;
-}
-
-body {
-	margin: 0;
 }
 
 html,
@@ -37,7 +17,7 @@ header {
 	text-align: center;
 	color: #fff;
 	padding-top: 20px;
-	font-family: 'lobster', sans-serif;
+	font-family: 'Lobster', cursive;
 }
 
 h1 {
@@ -63,6 +43,7 @@ body {
 	font-weight:700;
 	color:#333;
 	-webkit-tap-highlight-color:rgba(51,51,51,0);
+	margin: 0;
 }
 
 .container {
@@ -249,7 +230,7 @@ section {
 	display: inline-block;
 	vertical-align: middle;
 	color: #969696;
-	font-family: "lobster";
+	font-family: 'Lobster', cursive;
 	margin: 0 10px;
 	text-decoration: none;
 	font-size: 24px;
